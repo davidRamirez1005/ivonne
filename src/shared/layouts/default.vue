@@ -36,11 +36,9 @@
   
   .main-layout {
 	flex: 1;
-	margin-top: 6rem;
+	margin-top: 4rem;
 	padding-bottom: 5rem;
 	width: 100% !important;
-	padding-left: 3rem;
-	padding-right: 3rem;
   }
   
   footer {

@@ -6,6 +6,7 @@ import 'element-plus/dist/index.css'
 import './assets/css/style.css'
 import 'animate.css';
 import 'tailwindcss/tailwind.css'
+import '@fortawesome/fontawesome-free/css/all.css'
 
 const app = createApp(App)
 

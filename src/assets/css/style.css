@@ -18,9 +18,48 @@
 body {
   margin: 0;
   width: 100%;
+  overflow-x: hidden;
 }
 
 #app {
   max-width: 100%;
   margin: 0 auto;
+}
+
+.subtitulo{
+  font-size: 2rem;
+  font-weight: 400;
+  color: #6D9886;
+  display: flex;
+  justify-content: center;
+}
+
+.mini-subtitulo{
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #6D9886;
+  display: flex;
+  justify-content: center;
+}
+
+.text{
+  font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 1.5rem;
+  }
+
+  .text{
+    font-size: 1rem;
+  }
+
+  .mini-subtitulo{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #6D9886;
+    display: flex;
+    justify-content: center;
+  }
 }

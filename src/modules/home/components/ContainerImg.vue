@@ -30,4 +30,10 @@
     max-width: 100%;
     max-height: 100%;
   }
+  @media (max-width: 800px) {
+    .container {
+      width: 4em;
+      height: 4em;
+    }
+  }
   </style>

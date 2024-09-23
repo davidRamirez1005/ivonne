@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p> Ivonne -<span> Copyright © {{new Date().getFullYear()}}</span> created by <span class="nombre"><a href="https://jose-david-ramirez.vercel.app/" target="_blank" rel="noopener noreferrer">David Ramirez</a>😸</span> </p>
+        <p><span> Copyright © {{new Date().getFullYear()}}</span> created by <span class="nombre"><a href="https://jose-david-ramirez.vercel.app/" target="_blank" rel="noopener noreferrer">David Ramirez</a>😸</span> </p>
     </footer>
     </template>
     
