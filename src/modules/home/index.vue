@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div class="redirigir-contacto" @click="scrollToContact">
+      <i class="fas fa-phone-alt"></i>
+    </div>
     <div class="decoracionNegra">
       <img class="" src="../../assets/img/bgTop.png" alt="bg" />
     </div>
@@ -9,18 +12,18 @@
     <div class="decoracionNegraCelular">
       <img class="" src="../../assets/img/bgCelular.png" alt="bgcelular" />
     </div>
-    <div class="linea1">
+    <div class="linea1 scroll">
       <img class="" src="../../assets/img/linea1.png" alt="linea1" />
     </div>
-    <div class="linea2">
+    <div class="linea2 scroll">
       <img class="" src="../../assets/img/linea2.png" alt="linea2" />
     </div>
-    <div class="linea3">
+    <div class="linea3 scroll">
       <img class="" src="../../assets/img/linea3.png" alt="linea3" />
     </div>
     <div class="relative isolate px-6 pt-14 lg:px-10">
       <div class="mx-auto max-w-2xl  presentacion">
-        <div class="sm:mb-4 sm:flex sm:justify-center">
+        <div class="sm:mb-4 sm:flex sm:justify-center scroll">
           <p
             class="mt-4 font-bold text-base sm:text-lg lg:text-xl leading-4 text-[#393E46] animate__animated animate__jello text-center  items-center justify-center"
           >
@@ -46,14 +49,14 @@
           >
             <div class="scroll">
               <h2
-                class="font-bold text-[#6D9886] animate__animated animate__jello profesion"
+                class="font-bold text-[#6D9886] animate__animated animate__jello profesion scroll"
               >
               PSICOLOGIA INTEGRAL
               </h2>
             </div>
           </div>
           <div :class="{ 'dark-text': isDark }">
-            <p class="mt-6 text-lg leading-8 scroll text">
+            <p class="mt-6 text-lg leading-8 scroll text scroll">
               Como psicóloga y especialista en salud ocupacional, he dedicado mi carrera a diseñar estrategias integrales para el bienestar laboral y el desarrollo del talento humano. Mi experiencia de más de una década me ha permitido perfeccionar herramientas de evaluación de clima organizacional, liderazgo y resolución de conflictos.
             </p>
           </div>
@@ -88,19 +91,19 @@
         </div>
       </div>
     </div>
-    <div class="banner">
+    <div class="banner scroll">
       <Banner />
     </div>
-    <div class="mision">
+    <div class="mision ">
         <div class="row">
           <div class="col">
-            <img class="img-scene" src="../../assets/img/sceneMision.png" alt="scene-mision">
+            <img class="img-scene scroll" src="../../assets/img/sceneMision.png" alt="scene-mision">
           </div>
           <div class="col mision-vision-responsive">
             <div class="titulo-mision">
-              <h2 class="subtitulo">Misión</h2>
+              <h2 class="subtitulo scroll">Misión</h2>
             </div>
-            <p class="text">Brindar soluciones integrales en salud ocupacional y bienestar organizacional, promoviendo ambientes de trabajo seguros, saludables y empáticos. A través de la evaluación psicosocial, la implementación de estrategias de liderazgo y el fomento del desarrollo personal y profesional, buscamos optimizar el rendimiento de las organizaciones, alineando los objetivos empresariales con el bienestar de sus colaboradores.</p>
+            <p class="text scroll">Brindar soluciones integrales en salud ocupacional y bienestar organizacional, promoviendo ambientes de trabajo seguros, saludables y empáticos. A través de la evaluación psicosocial, la implementación de estrategias de liderazgo y el fomento del desarrollo personal y profesional, buscamos optimizar el rendimiento de las organizaciones, alineando los objetivos empresariales con el bienestar de sus colaboradores.</p>
           </div>
         </div>
     </div>
@@ -108,19 +111,19 @@
         <div class="row mision-vision ">
           <div class="col mision-vision-responsive">
             <div class="titulo-vision">
-              <h2 class="subtitulo">Visión</h2>
+              <h2 class="subtitulo scroll">Visión</h2>
             </div>
-            <p class="text">Ser una consultora líder en salud ocupacional y bienestar laboral en la región, reconocida por generar cambios positivos y sostenibles en la cultura organizacional de las empresas, contribuyendo a su éxito y crecimiento a largo plazo. Nos proponemos ser un referente en la creación de entornos laborales saludables, innovadores y comprometidos con el desarrollo integral de las personas.</p>
+            <p class="text scroll">Ser una consultora líder en salud ocupacional y bienestar laboral en la región, reconocida por generar cambios positivos y sostenibles en la cultura organizacional de las empresas, contribuyendo a su éxito y crecimiento a largo plazo. Nos proponemos ser un referente en la creación de entornos laborales saludables, innovadores y comprometidos con el desarrollo integral de las personas.</p>
           </div>
           <div class="col img-vision">
-            <img class="img-scene" src="../../assets/img/sceneVision.png" alt="scene-vision">
+            <img class="img-scene scroll" src="../../assets/img/sceneVision.png" alt="scene-vision">
           </div>
         </div>
     </div>
     <div class="valore-servicios">
       <div class="row row-container-services">
         <div class="col col-container-services bg-valores">
-          <h2 class="subtitulo">Valores</h2>
+          <h2 class="subtitulo scroll">Valores</h2>
           <br><br>
           <div class="items-valores">
               <squareValores
@@ -128,6 +131,7 @@
                 title="Innovación" 
                 description="Buscamos constantemente nuevas formas de mejorar el bienestar y la seguridad en el trabajo, implementando prácticas innovadoras." 
                 color="#E4FFEE" 
+                class="scroll"
               />
               <br>
               <br>
@@ -136,6 +140,7 @@
               title="Compromiso" 
               description="Estamos dedicados a generar valor a largo plazo tanto para las empresas como para sus colaboradores." 
               color="#F4F4FF" 
+              class="scroll"
             />
               <br>
               <br>
@@ -144,6 +149,7 @@
               title="Excelencia" 
               description="Nos comprometemos a ofrecer servicios de alta calidad, ajustados a las necesidades específicas de cada cliente." 
               color="#EAF9FF" 
+              class="scroll"
             />
               <br>
               <br>
@@ -152,15 +158,16 @@
               title="Ética" 
               description="Actuamos con integridad, respetando la normativa legal y los principios éticos en cada acción que realizamos." 
               color="#FFF6D3" 
+              class="scroll"
             />
           </div>
         </div>
         <div class="col col-container-services" style="margin-top: 2rem;">
-          <h2 class="subtitulo">Servicios</h2>
+          <h2 class="subtitulo scroll">Servicios</h2>
           <br><br>
           <div class="container-list">
             <ul class="services-list">
-              <li class="text" v-for="(service, index) in services" :key="index">
+              <li class="text scroll" v-for="(service, index) in services" :key="index">
                 <i  class="fas fa-check"></i> {{ service }}
               </li>
             </ul>
@@ -169,10 +176,10 @@
       </div>
     </div>
     <div class="programas">
-      <div class="title-progra">
+      <div class="title-progra scroll">
         <h2>Programas y Capacitaciones</h2>
       </div>
-      <div class="row">
+      <div class="row scroll">
         <div class="col square">
           <div class="col container-numero">
             <h2>01</h2>
@@ -208,7 +215,7 @@
         </div>
       </div>
       <br>
-      <div class="row">
+      <div class="row scroll">
         <div class="col square">
           <div class="col container-numero">
             <h2>05</h2>
@@ -245,10 +252,10 @@
       </div>
     </div>
     <div class="testimonios">
-      <h2 class="subtitulo">Satisfacción del cliente</h2>
+      <h2 class="subtitulo scroll">Satisfacción del cliente</h2>
       <br>
-      <h3 class="mini-subtitulo">Testimonios</h3>
-      <div class="cartas-testimonios">
+      <h3 class="mini-subtitulo scroll">Testimonios</h3>
+      <div class="cartas-testimonios scroll">
         <div>
           <client
             comentario="Ivonne es una profesional excepcional, su trabajo ha sido fundamental para mejorar el clima laboral en nuestra empresa."
@@ -271,40 +278,40 @@
           />
         </div>
       </div>
-      <div class="contacto">
+      <div class="contacto " id="section-contacto">
         <div class="section-contacto">
           <div class="row">
             <div class="col">
-              <div class="barras-primero">
-                <img class="img-barras-1" src="../../assets/img/barras.png" alt="scene">
+              <div class="barras-primero scroll">
+                <img class="img-barras-1 " src="../../assets/img/barras.png" alt="scene">
               </div>
-              <div class="barras-primero">
-                <img class="img-barras-2" src="../../assets/img/barras.png" alt="scene">
+              <div class="barras-primero scroll">
+                <img class="img-barras-2 scroll" src="../../assets/img/barras.png" alt="scene">
               </div>
-              <div class="text-contacto">
+              <div class="text-contacto scroll">
                 <h2 class="subtitulo">¡Contáctanos!</h2>
                 <br>
-                <p class="text">Si tienes alguna pregunta, deseas más información sobre nuestros servicios o quieres agendar una consulta, por favor llena el siguiente formulario. Nos pondremos en contacto contigo lo antes posible.</p>
+                <p class="text scroll">Si tienes alguna pregunta, deseas más información sobre nuestros servicios o quieres agendar una consulta, por favor llena el siguiente formulario. Nos pondremos en contacto contigo lo antes posible.</p>
               </div>
-              <div class="container-circular">
+              <div class="container-circular scroll">
                 <img class="img-circular" src="../../assets/img/group.png" alt="circular">
               </div>
             </div>
-            <div class="col container-form">
+            <div class="col container-form ">
               <form class="space-y-4 p-4">
-                <div>
+                <div class="scroll">
                   <label for="name" class="block text-sm font-medium text-gray-700">Nombre Completo</label>
                   <input v-model="form.nombre" type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
                 </div>
-                <div>
+                <div class="scroll">
                   <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
                   <input v-model="form.email" type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                 </div>
-                <div>
+                <div class="scroll">
                   <label for="empresa" class="block text-sm font-medium text-gray-700">Empresa (opcional)</label>
                   <input v-model="form.empresa" type="text" id="empresa" name="empresa" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                 </div>
-                <div>
+                <div class="scroll">
                   <label for="servicio" class="block text-sm font-medium text-gray-700">Servicio de Interés</label>
                   <VueMultiselect
                     id="servicio"
@@ -318,11 +325,11 @@
                     class="custom-multiselect"
                   />
                 </div>
-                <div>
+                <div class="scroll">
                   <label for="mensaje" class="block text-sm font-medium text-gray-700">Mensaje</label>
                   <textarea v-model="form.mensaje" id="mensaje" name="mensaje" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
                 </div>
-                <div class="flex justify-end">
+                <div class="flex justify-end scroll">
                   <button @click="submitForm" type="submit" class="mt-4 px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-full shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Enviar</button>
                 </div>
               </form>
@@ -330,7 +337,7 @@
           </div>
         </div>
       </div>
-      <div class="row container-info" id="contact">
+      <div class="row container-info " id="contact">
         <div class="col vacio"></div>
         <div class="col info-contacto">
           <h1>Contacto:</h1>
@@ -371,7 +378,12 @@ import nube from "../../assets/img/nube.png";
 import VueMultiselect from 'vue-multiselect';
 import 'vue-multiselect/dist/vue-multiselect.css';
 
-const contactSection = ref(null);
+const scrollToContact = () => {
+  const contactSection = document.getElementById('section-contacto');
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 let isDark = ref(false);
 
 function isDarkColor(color) {
@@ -478,7 +490,14 @@ onMounted(() => {
     scale: 100%;
   }
 }
-
+.redirigir-contacto {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  font-size: 2.1rem;
+  color: #95DFC0;
+  z-index: 999;
+}
 .text{
   font-size: 1.2rem;
 }
@@ -802,7 +821,7 @@ onMounted(() => {
     position: absolute;
     top: 0;
     right: 0;
-    width: 55%;
+    width: 60%;
   }
 
   .text-center h1{

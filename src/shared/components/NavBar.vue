@@ -15,7 +15,12 @@
         </div>
         <div class="lg:flex lg:gap-x-10">
           <div class="nav flex gap-x-8">
-            <router-link v-for="item in navigation" :key="item.name" :to="item.href" class="text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold leading-9 text-gray-900">
+            <router-link 
+              v-for="item in navigation" 
+              :key="item.name" 
+              :to="item.href" 
+              :class="{'text-black': isActiveRoute(item.href)}"
+              class="text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold leading-9 text-gray-900">
               {{ item.name }}
             </router-link>
           </div>
@@ -29,7 +34,7 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
-import { useRouter } from 'vue-router';
+import { useRouter, useRoute } from 'vue-router';
 
 const navigation = [
   { name: 'Inicio', href: '/' },
@@ -39,6 +44,7 @@ const navigation = [
 
 const mobileMenuOpen = ref(false);
 const router = useRouter();
+const route = useRoute();
 
 const navigateTo = (href) => {
   if (href === '#contact') {
@@ -61,6 +67,10 @@ const handleScroll = () => {
   }
 };
 
+const isActiveRoute = (href) => {
+  return route.path === href;
+};
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
 });
@@ -81,6 +91,11 @@ img {
   width: 4rem;
   height: 4rem;
 }
+
+.text-black {
+  color: rgb(21, 20, 20);
+}
+
 @media (max-width: 800px) {
   img {
     width: 3rem;
