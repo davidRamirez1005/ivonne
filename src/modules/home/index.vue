@@ -1058,14 +1058,7 @@ onMounted(() => {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.persona {
-  display: flex;
-  position: absolute;
-  z-index: 1;
-  top: 10rem;
-  right: -3rem;
-  flex-direction: column;
-}
+
 .persona img{
   width: 80%;
 }
