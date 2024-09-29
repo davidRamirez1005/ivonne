@@ -521,7 +521,7 @@ onMounted(() => {
 
 .decoracionNegra {
   display: flex;
-  height: 90%;
+  height: 85%;
   width: 35%;
   position: absolute;
   z-index: 1;
@@ -536,7 +536,7 @@ onMounted(() => {
   position: absolute;
   z-index: 1;
   top: 10rem;
-  right: 1%;
+  right: 0;
   flex-direction: column;
 }
 .persona img{
@@ -866,7 +866,7 @@ onMounted(() => {
     position: absolute;
     top: 0;
     right: 0;
-    width: 60%;
+    width: 57%;
   }
 
   .text-center h1{
@@ -1007,11 +1007,16 @@ onMounted(() => {
     padding: 3rem;
 }
 
+.barras-primero{
+  overflow-x: hidden;
+}
 .img-barras-1 {
     left: 14rem;
     top: -1rem;
 }
-
+.img-barras-2{
+  display: none;
+}
 .img-circular {
     top: -1rem;
     left: 1rem;
