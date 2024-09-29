@@ -890,6 +890,10 @@ onMounted(() => {
     justify-content: center;
   }
 
+  .PersonaCelular img{
+    border-radius: 40px;
+  }
+
   .solicitarMovil {
     display: block;
   }
