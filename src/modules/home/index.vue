@@ -538,9 +538,11 @@ onMounted(() => {
   top: 10rem;
   right: 0;
   flex-direction: column;
+  align-items: center;
 }
 .persona img{
   width: 80%;
+  border-radius: 40px;
 }
 .tonico {
   display: flex;
