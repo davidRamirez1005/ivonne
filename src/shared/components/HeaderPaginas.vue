@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container-header">
         <div class="decoracion-header">
           <img class="" src="../../assets/img/header.png" alt="bg" />
         </div>

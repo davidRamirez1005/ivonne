@@ -94,8 +94,13 @@ body {
     align-items: flex-start;
     justify-content: center;
     align-content: center;
-    top: 16rem;
+    top: 8rem;
     left: 5rem;
+}
+
+.container-header{
+  display: flex;
+  margin-bottom: 38rem;
 }
 
 @media (max-width: 800px) {
@@ -124,8 +129,8 @@ body {
       display: flex;
       position: relative;
       right: -5vh;
-      top: 13rem;
-      width: 55%;
+      top: 12rem;
+      width: 45%;
       opacity: 0.5;
   }
 
@@ -133,8 +138,13 @@ body {
     width: 90%;
     flex-wrap: wrap;
     align-items: flex-start;
-    top: 7rem;
+    top: 5.5rem;
     left: 1rem;
     right: 1rem;
-}
+  }
+
+  .container-header{
+    display: flex;
+    margin-bottom: 60vh;
+  }
 }

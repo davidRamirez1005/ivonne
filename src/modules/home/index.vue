@@ -4,7 +4,14 @@
       <i class="fas fa-phone-alt"></i>
     </div>
     <div class="decoracionNegra">
-      <img class="" src="../../assets/img/bgTop.png" alt="bg" />
+      <!-- <img class="" src="../../assets/img/bgTop.png" alt="bg" /> -->
+      <div class="persona">
+        <img class="" src="../../assets/img/trofeo.png" alt="persona" />
+        <br>
+        <div class="boton-about">
+          <button class="bg-gray-500 text-white font-bold py-2 px-4 rounded">Sobre mi</button>
+        </div>
+      </div>
     </div>
     <!-- <div class="tonico">
       <img class="" src="" alt="persona" />
@@ -297,40 +304,40 @@
                 <img class="img-circular" src="../../assets/img/group.png" alt="circular">
               </div>
             </div>
-            <div class="col container-form ">
+            <div class="col container-form scroll">
               <form class="space-y-4 p-4">
-                <div class="scroll">
+                <div>
                   <label for="name" class="block text-sm font-medium text-gray-700">Nombre Completo</label>
                   <input v-model="form.nombre" type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
                 </div>
-                <div class="scroll">
+                <div>
                   <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
                   <input v-model="form.email" type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                 </div>
-                <div class="scroll">
+                <div>
                   <label for="empresa" class="block text-sm font-medium text-gray-700">Empresa (opcional)</label>
                   <input v-model="form.empresa" type="text" id="empresa" name="empresa" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                 </div>
-                <div class="scroll">
+                <div class="relative z-10">
                   <label for="servicio" class="block text-sm font-medium text-gray-700">Servicio de Interés</label>
                   <VueMultiselect
-                    id="servicio"
-                    v-model="selectedServices"
-                    :options="servicesform"
-                    :multiple="true"
-                    :close-on-select="true"
-                    placeholder="Seleccione servicios"
-                    label="nombre"
-                    track-by="numero"
-                    class="custom-multiselect"
+                  id="servicio"
+                  v-model="selectedServices"
+                  :options="servicesform"
+                  :multiple="true"
+                  :close-on-select="true"
+                  placeholder="Seleccione servicios"
+                  label="nombre"
+                  track-by="numero"
+                  class="custom-multiselect"
                   />
                 </div>
-                <div class="scroll">
+                <div>
                   <label for="mensaje" class="block text-sm font-medium text-gray-700">Mensaje</label>
                   <textarea v-model="form.mensaje" id="mensaje" name="mensaje" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
                 </div>
-                <div class="flex justify-end scroll">
-                  <button @click="submitForm" type="submit" class="mt-4 px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-full shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Enviar</button>
+                <div class="flex justify-end " style="z-index: -1;">
+                  <button @click="submitForm" type="submit" class="mt-4 px-4 py-2 bg-gray-600 text-white text-sm font-medium rounded-full shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Enviar</button>
                 </div>
               </form>
             </div>
@@ -342,13 +349,13 @@
         <div class="col info-contacto">
           <h1>Contacto:</h1>
           <br>
-          <div>
+          <div class="item-contacto">
             <p><i class="fas fa-phone"></i> +57 3154665780</p>
           </div>
-          <div>
+          <div class="item-contacto">
             <p><i class="fas fa-envelope"></i> ivonnemaritzaruedacristancho@gmail.com</p>
           </div>
-          <div>
+          <div class="item-contacto">
             <p><i class="fas fa-map-marker-alt"></i> Bucaramanga-Santander</p>
           </div>
         </div>
@@ -496,6 +503,7 @@ onMounted(() => {
   right: 1rem;
   font-size: 2.1rem;
   color: #95DFC0;
+  cursor: pointer;
   z-index: 999;
 }
 .text{
@@ -504,11 +512,23 @@ onMounted(() => {
 
 .decoracionNegra {
   display: flex;
-  height: 80%;
+  height: 90%;
+  width: 35%;
   position: absolute;
   z-index: 1;
   top: 0;
   right: 0;
+  background-image: url('../../assets/img/bgTop.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.persona {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  top: 15rem;
+  right: 10rem;
+  flex-direction: column;
 }
 .tonico {
   display: flex;
@@ -802,6 +822,9 @@ onMounted(() => {
   font-size: 1.5rem;
 }
 
+.item-contacto{
+  margin-bottom: 1rem;
+}
 @media (max-width: 800px) {
   .decoracionNegra {
     display: none;

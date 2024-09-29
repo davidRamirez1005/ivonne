@@ -1,32 +1,32 @@
 <template>
-    <div class="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1 class="text">Fomentando la salud, la seguridad y el bienestar en todos los aspectos de la vida humana.</h1>
-          </div>
-          <div class="col datos">
-            <span>
-                43243
-            </span>
-            <span>
-                43243
-            </span>
-            <span>
-                43243
-            </span>
-          </div>
+  <div class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="text">Fomentando la salud, la seguridad y el bienestar en todos los aspectos de la vida humana.</h1>
+        </div>
+        <div class="col datos">
+          <span>
+            Menos estrés y ausentismo
+          </span>
+          <span>
+            Mejor clima organizacional
+          </span>
+          <span>
+            Mayor productividad
+          </span>
         </div>
       </div>
     </div>
-  </template>
+  </div>
+</template>
   
   <script setup>
   </script>
   
   <style scoped>
   .banner {
-    margin-top: 5rem;
+    margin-top: 8rem;
     width: 100%;
   }
   
@@ -52,6 +52,10 @@
   @media (max-width: 800px) {
     .datos{
       margin-top: 2rem;
+      column-gap: 1rem;
+    }
+    .banner {
+      margin-top: 5rem;
     }
   }
   </style>
