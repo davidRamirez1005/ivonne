@@ -26,7 +26,6 @@
   
   <style scoped>
   .banner {
-    margin-top: 8rem;
     width: 100%;
   }
   

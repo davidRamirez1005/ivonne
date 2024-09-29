@@ -20,7 +20,7 @@ const layout = computed(() => {
 
 watch(route, () => {
 	if (route.meta) {
-		document.title = 'ivonne - ' + (route.meta.title || 'Home');
+		document.title = 'Ivonne - ' + (route.meta.title || 'Home');
 	} else {
 		document.title = 'Home';
 	}

@@ -46,6 +46,13 @@
                 align="end"
             />
         </div>
+        <div class="container-slider">
+        <el-carousel :interval="4000" type="card">
+          <el-carousel-item v-for="(image, index) in images" :key="index">
+            <img :src="image" alt="Carousel Image" class="carousel-image">
+          </el-carousel-item>
+        </el-carousel>
+      </div>
         <div class="contacto-paginas">
             <ContactoPaginas />
         </div>
@@ -57,6 +64,13 @@
     import HeaderPaginas from '../../../shared/components/HeaderPaginas.vue';
     import ContactoPaginas from '../../../shared/components/ContactoPaginas.vue';
     import ServiceSection from './components/service.vue';
+
+    const images = ref([
+        'https://mybucketgatos.s3.us-east-2.amazonaws.com/ivonee/certificado-1.jpg',
+        'https://mybucketgatos.s3.us-east-2.amazonaws.com/ivonee/certificado-2.jpg',
+        'https://mybucketgatos.s3.us-east-2.amazonaws.com/ivonee/certificado-3.jpg',
+        'https://mybucketgatos.s3.us-east-2.amazonaws.com/ivonee/certificado-6.jpg'
+    ]);
     </script>
     
     <style scoped>
@@ -68,6 +82,16 @@
     .row {
         margin-bottom: 3rem;
     }
+
+    .contacto-paginas{
+        margin-top: 3rem;
+    }
+
+    .carousel-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        }
     
     @media (max-width: 800px) {
         .contenedor {

@@ -6,16 +6,9 @@
     <div class="decoracionNegra">
       <!-- <img class="" src="../../assets/img/bgTop.png" alt="bg" /> -->
       <div class="persona">
-        <img class="" src="../../assets/img/trofeo.png" alt="persona" />
-        <br>
-        <div class="boton-about">
-          <button class="bg-gray-500 text-white font-bold py-2 px-4 rounded">Sobre mi</button>
-        </div>
+        <img class="" src="../../assets/img/foto-removebg-preview.png" alt="persona" />
       </div>
     </div>
-    <!-- <div class="tonico">
-      <img class="" src="" alt="persona" />
-    </div> -->
     <div class="decoracionNegraCelular">
       <img class="" src="../../assets/img/bgCelular.png" alt="bgcelular" />
     </div>
@@ -47,9 +40,10 @@
           RUEDA CRISTANCHO
           </h1>
           <br />
-          <div class="tonicoCelular">
-            <img class="" src="" alt="tonico" />
+          <div class="PersonaCelular">
+            <img class="" src="../../assets/img/foto-removebg-preview.png" alt="tonico" width="50%" />
           </div>
+          <br>
           <div
             class="profesion"
             style="display: flex; justify-content: center; gap: 2rem"
@@ -285,6 +279,13 @@
           />
         </div>
       </div>
+      <div class="container-slider">
+        <el-carousel :interval="4000" type="card">
+          <el-carousel-item v-for="(image, index) in images" :key="index">
+            <img :src="image" alt="Carousel Image" class="carousel-image">
+          </el-carousel-item>
+        </el-carousel>
+      </div>
       <div class="contacto " id="section-contacto">
         <div class="section-contacto">
           <div class="row">
@@ -407,6 +408,14 @@ watchEffect(() => {
   isDark.value = isDarkColor(bgColor);
 });
 
+const images = ref([
+  'https://mybucketgatos.s3.us-east-2.amazonaws.com/ivonee/logo-frase.jpg',
+  'https://mybucketgatos.s3.us-east-2.amazonaws.com/ivonee/recracion.png',
+  'https://mybucketgatos.s3.us-east-2.amazonaws.com/ivonee/recreacion-2.png',
+  'https://mybucketgatos.s3.us-east-2.amazonaws.com/ivonee/recreacion-3.png',
+  'https://mybucketgatos.s3.us-east-2.amazonaws.com/ivonee/recreacion-4.png'
+]);
+
 const services = [
   "Evaluación de Riesgo Psicosocial",
   "Programas de Bienestar y Clima Laboral",
@@ -526,9 +535,12 @@ onMounted(() => {
   display: flex;
   position: absolute;
   z-index: 1;
-  top: 15rem;
-  right: 10rem;
+  top: 10rem;
+  right: 1%;
   flex-direction: column;
+}
+.persona img{
+  width: 80%;
 }
 .tonico {
   display: flex;
@@ -560,7 +572,7 @@ onMounted(() => {
 .solicitarMovil {
   display: none;
 }
-.tonicoCelular {
+.PersonaCelular {
   display: none;
 }
 .tonico img {
@@ -732,6 +744,16 @@ onMounted(() => {
     align-items: center;
 }
 
+.container-slider{
+  margin-top: 3rem;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .contacto{
   margin-top: 3rem;
   background-color: #F5F7FA;
@@ -859,9 +881,11 @@ onMounted(() => {
     column-gap: 0.5rem;
   }
 
-  .tonicoCelular {
+  .PersonaCelular {
     display: flex;
     z-index: 1;
+    display: flex;
+    justify-content: center;
   }
 
   .solicitarMovil {
@@ -1009,5 +1033,30 @@ onMounted(() => {
   margin-top: 0rem;
 }
 
+}
+@media(min-width: 1280px) and (max-width: 1400px){
+  .decoracionNegra {
+  display: flex;
+  height: 95%;
+  width: 42%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-image: url('../../assets/img/bgTop.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.persona {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  top: 10rem;
+  right: -3rem;
+  flex-direction: column;
+}
+.persona img{
+  width: 80%;
+}
 }
 </style>
