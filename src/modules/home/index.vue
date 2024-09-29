@@ -305,7 +305,7 @@
                 <img class="img-circular" src="../../assets/img/group.png" alt="circular">
               </div>
             </div>
-            <div class="col container-form scroll">
+            <div class="col container-form">
               <form class="space-y-4 p-4">
                 <div>
                   <label for="name" class="block text-sm font-medium text-gray-700">Nombre Completo</label>
