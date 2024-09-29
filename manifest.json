@@ -1,0 +1,15 @@
+{
+    "short_name": "Ivonne Rueda",
+    "name": "Ivonne Rueda",
+    "icons": [
+    {
+        "src": "./src/assets/img/logo.png",
+        "sizes": "64x64 32x32 24x24 16x16",
+        "type": "image/x-icon"
+    }
+    
+    ],
+    "theme_color": "#05031D",
+    "start_url": "https://ivonne-rueda.vercel.app/",
+    "display": "standalone"
+}
