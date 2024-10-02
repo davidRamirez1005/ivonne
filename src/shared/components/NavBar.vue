@@ -107,7 +107,11 @@ img {
 }
 
   .nav a {
-    color: #6D9886;
+    color: #ffffff;
+  }
+
+  .blurred-background .nav a {
+    color: #245a44; /* Cambia este color al que desees cuando el fondo esté difuminado */
   }
 }
 </style>

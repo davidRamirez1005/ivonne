@@ -8,9 +8,10 @@
     </div>
     <div class="row">
         <div class="col-11">
-            <h2 class="text-end text-2xl font-semibold">!CONTACTANOS!</h2>
+            <h2 class="text-center text-2xl font-semibold">!CONTACTANOS!</h2>
         </div>
     </div>
+    <br>
     <div class="row">
         <div class="col info">
             <div class="row">
@@ -26,7 +27,7 @@
                 <p><i class="fas fa-map-marker-alt"></i> Bucaramanga-Santander</p>
             </div>
         </div>
-        <div class="col">
+        <!-- <div class="col">
             <div class="row">
                 <h2 class="text-2xl font-normal">Redes Sociales:</h2>
             </div>
@@ -39,7 +40,7 @@
             <div class="row">
                 <p><i class="fab fa-linkedin"></i> LinkedIn</p>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 </template>
@@ -99,7 +100,7 @@ p:hover{
 .barras-2{
     width: 35vw;
     margin-left: 10rem;
-    margin-top: 20rem;
+    margin-top: 14rem;
 }
 }
 </style>

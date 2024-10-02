@@ -273,9 +273,9 @@
         </div>
         <div>
           <client
-            comentario="Ivonne es una profesional excepcional, su trabajo ha sido fundamental para mejorar el clima laboral en nuestra empresa."
-            nombre="Juan Pérez"
-            compania="Gerente General"
+            comentario="El enfoque de Ivonne en el bienestar y desarrollo del personal ha transformado nuestra organización."
+            nombre="María Gómez"
+            compania="Directora de Recursos Humanos"
           />
         </div>
       </div>
@@ -362,7 +362,7 @@
         </div>
         <div class="col">
           <div class="icon-container">
-            <i class="fab fa-linkedin icon-link"></i>
+            <!-- <i class="fab fa-linkedin icon-link"></i> -->
           </div>
         </div>
       </div>
@@ -459,7 +459,7 @@ const submitForm = () => {
     empresa: form.value.empresa
   };
 
-  const numeroTelefono = "3177289785";
+  const numeroTelefono = "3154665780";
   const mensajeWhatsApp = `
     ¡Hola!
     

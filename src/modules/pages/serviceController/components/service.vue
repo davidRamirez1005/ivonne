@@ -1,7 +1,10 @@
 <template>
     <div class="row">
       <div class="col-12">
-        <h2 :class="['scroll', 'subtitulo-servicio', textAlignClass]">{{ title }}</h2>
+        <h2 :class="['scroll', 'subtitulo-servicio', textAlignClass]">
+          <i :class="['fas', iconName]"></i>
+          {{ title }}
+        </h2>
         <br>
         <p class="scroll text text-start">{{ description }}</p>
       </div>
@@ -17,7 +20,11 @@
     align: {
       type: String,
       default: 'start'
-    }
+    },
+    iconName: {
+    type: String,
+    default: 'fa-icon-name'
+  }
   });
   
   const textAlignClass = `text-${props.align}`;

@@ -34,13 +34,13 @@ const props = defineProps({
 
 <style scoped>
 .subtitulo-header{
-    color: #ffffff;
+    color: #141c18;
     margin-bottom: 2rem;
     font-size: 3rem;
 }
 
 .texto-header{
-    color: #ffffff;
+    color: #141c18;
 }
 
 @media (max-width: 800px){
@@ -49,7 +49,11 @@ const props = defineProps({
     }
 
     .texto-header{
-        color: #ffffff;
+        color: #141c18;
+    }
+
+    .imagen-decoracion{
+        display: none;
     }
 }
 </style>
