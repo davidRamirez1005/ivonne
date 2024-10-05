@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header ref="header" class="absolute inset-x-0 top-0 z-50">
+    <header ref="header" class="absolute inset-x-0 top-0 z-50" aria-labelledby="navegacion">
       <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
           <router-link to="/" class="-m-1.5 p-1.5">
@@ -8,7 +8,7 @@
           </router-link>
         </div>
         <div class="flex lg:hidden">
-          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = true">
+          <button aria-label="Open Modal" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = true">
             <span class="sr-only">Open main menu</span>
             <Bars3Icon class="h-6 w-6" aria-hidden="true" />
           </button>
