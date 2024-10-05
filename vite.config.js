@@ -18,13 +18,6 @@ export default defineConfig({
     visualizer({ open: true }), // Visualiza el tamaño del bundle
   ],
   build: {
-    minify: 'terser', // Usa 'terser' para una mejor minificación
-    terserOptions: {
-      compress: {
-        drop_console: true, // Elimina los console.log en producción
-        drop_debugger: true, // Elimina los debugger en producción
-      },
-    },
     rollupOptions: {
       output: {
         manualChunks(id) {
