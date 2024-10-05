@@ -26,7 +26,6 @@
         <div class="sm:mb-4 sm:flex sm:justify-center scroll">
           <p
             class="mt-4 font-bold text-base sm:text-lg lg:text-xl leading-4 text-[#393E46] animate__animated animate__jello text-center  items-center justify-center"
-            aria-labelledby="eslogan"
           >
           “Promoviendo el bienestar, la seguridad y la salud en
           los diferentes entornos del ser humano”
@@ -36,7 +35,6 @@
         <div class="text-center">
           <h1
             class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl scroll"
-            aria-labelledby="nombre-ivonne"
           >
           IVONNE MARITZA
           RUEDA CRISTANCHO
@@ -53,14 +51,13 @@
             <div class="scroll">
               <h2
                 class="font-bold text-[#6D9886] animate__animated animate__jello profesion scroll"
-                aria-labelledby="profesion"
               >
               PSICOLOGIA INTEGRAL
               </h2>
             </div>
           </div>
           <div :class="{ 'dark-text': isDark }">
-            <p class="mt-6 text-lg leading-8 scroll text scroll" aria-labelledby="descripcion-profesion">
+            <p class="mt-6 text-lg leading-8 scroll text scroll">
               Como psicóloga y especialista en salud ocupacional, he dedicado mi carrera a diseñar estrategias integrales para el bienestar laboral y el desarrollo del talento humano. Mi experiencia de más de una década me ha permitido perfeccionar herramientas de evaluación de clima organizacional, liderazgo y resolución de conflictos.
             </p>
           </div>
@@ -98,7 +95,7 @@
     <div class="banner scroll">
       <Banner />
     </div>
-    <div class="mision" aria-labelledby="mision">
+    <div class="mision">
         <div class="row">
           <div class="col">
             <img class="img-scene scroll" src="../../assets/img/sceneMision.png" alt="scene-mision">
@@ -111,7 +108,7 @@
           </div>
         </div>
     </div>
-    <div class="mision vision" aria-labelledby="vision">
+    <div class="mision vision">
         <div class="row mision-vision ">
           <div class="col mision-vision-responsive">
             <div class="titulo-vision">
@@ -256,7 +253,7 @@
       </div>
     </div>
     <div class="testimonios">
-      <h2 class="subtitulo scroll" aria-labelledby="satisfaccion-cliente">Satisfacción del cliente</h2>
+      <h2 class="subtitulo scroll">Satisfacción del cliente</h2>
       <br>
       <h3 class="mini-subtitulo scroll">Testimonios</h3>
       <div class="cartas-testimonios scroll">
@@ -289,7 +286,7 @@
           </el-carousel-item>
         </el-carousel>
       </div>
-      <div class="contacto " id="section-contacto" aria-labelledby="contacto">
+      <div class="contacto " id="section-contacto">
         <div class="section-contacto">
           <div class="row">
             <div class="col">
@@ -524,7 +521,7 @@ onMounted(() => {
 
 .decoracionNegra {
   display: flex;
-  height: 85%;
+  height: 74%;
   width: 35%;
   position: absolute;
   z-index: 1;
@@ -532,7 +529,7 @@ onMounted(() => {
   right: 0;
   background-image: url('../../assets/img/bgTop.png');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: round;
 }
 .persona {
   display: flex;
