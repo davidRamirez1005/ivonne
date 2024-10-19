@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="inicio">
     <div class="redirigir-contacto" @click="scrollToContact">
       <i class="fas fa-phone-alt"></i>
     </div>

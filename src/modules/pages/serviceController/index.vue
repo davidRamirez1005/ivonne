@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="inicio-servicios">
         <HeaderPaginas
             titulo="Descripción de Servicios"
             descripcion="Este conjunto de servicios tiene como finalidad mejorar el desempeño organizacional, fortalecer el bienestar de los empleados y crear una cultura empresarial más resiliente y alineada con los estándares actuales de seguridad y salud en el trabajo."
@@ -61,10 +61,10 @@
             </el-carousel-item>
             </el-carousel>
             
-            <el-dialog :visible.sync="dialogVisible" width="80%" :before-close="handleClose">
-            <img :src="selectedImage" alt="Large Image" class="large-image">
-            </el-dialog>
         </div>
+        <!-- <el-dialog v-if="dialogVisible" width="80%" :before-close="handleClose">
+        <img :src="selectedImage" alt="Large Image" class="large-image">
+        </el-dialog> -->
         <div class="contacto-paginas">
             <ContactoPaginas />
         </div>
@@ -87,6 +87,7 @@
 
     const dialogVisible = ref(false);
     const selectedImage = ref('');
+    const open = ref(true);
 
     const showImage = (image) => {
     selectedImage.value = image;

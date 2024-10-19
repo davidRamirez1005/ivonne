@@ -19,6 +19,7 @@
               v-for="item in navigation" 
               :key="item.name" 
               :to="item.href" 
+              @click.prevent="handleScrollItem(item.name)" 
               :class="{'text-black': isActiveRoute(item.href)}"
               class="text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold leading-9 text-gray-900">
               {{ item.name }}
@@ -65,6 +66,33 @@ const handleScroll = () => {
   } else {
     header.value.classList.remove('blurred-background');
   }
+};
+
+const handleScrollItem = (name) => {
+if (name === 'Inicio') {
+  router.push('/').then(() => {
+    const contactSection = document.getElementById('inicio');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+}
+if (name === 'Servicios') {
+  router.push('/servicios').then(() => {
+    const contactSection = document.getElementById('inicio-servicios');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+}
+if (name === 'Programas') {
+  router.push('/Programas').then(() => {
+    const contactSection = document.getElementById('inicio-Programas');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+}
 };
 
 const isActiveRoute = (href) => {

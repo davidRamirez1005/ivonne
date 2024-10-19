@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="inicio-Programas">
         <HeaderPaginas
             titulo="Programas y Capacitaciones"
             descripcion="Estas capacitaciones están diseñadas para gerentes y jefes de área, enfocándose en el desarrollo de habilidades de liderazgo efectivo, toma de decisiones, comunicación asertiva, y resolución de conflictos. Los módulos cubren aspectos clave como motivación de equipos, delegación de tareas, retroalimentación constructiva, y manejo de situaciones de estrés en la gestión diaria."
