@@ -259,16 +259,16 @@
       <div class="cartas-testimonios scroll">
         <div>
           <client
-            comentario="Ivonne es una profesional excepcional, su trabajo ha sido fundamental para mejorar el clima laboral en nuestra empresa."
-            nombre="Juan Pérez"
-            compania="Gerente General"
+            comentario="Excelente persona, profesional, integridad e imparcialidad en su trabajo y acompañamiento, en busca del bienestar personal de los colaboradores y las empresas."
+            nombre="Ayda Xiomara Villa Carpio."
+            compania=""
           />
         </div>
         <div>
           <client
-            comentario="Gracias a Ivonne, hemos logrado implementar un sistema de gestión de seguridad y salud en el trabajo."
-            nombre="María Rodríguez"
-            compania="Directora de Recursos Humanos"
+            comentario=" La Dra Ivonne es una profesional integral, con ecxelente capacidad para dirigir su gestión como psicóloga y especialista en el sistema de Gestión, su aporte ha enriquecido nuestro conocimiento."
+            nombre="Torre del parque San pio."
+            compania=""
           />
         </div>
         <div>
@@ -279,13 +279,21 @@
           />
         </div>
       </div>
+      <br>
+      <el-dialog v-model="dialogVisible" title="" width="700" center>
+        <span>
+          <img :src="selectedImage" alt="Selected Image" class="large-image" style="border-radius: 20px;">
+        </span>
+      </el-dialog>
       <div class="container-slider">
         <el-carousel :interval="4000" type="card">
           <el-carousel-item v-for="(image, index) in images" :key="index">
-            <img :src="image" alt="Carousel Image" class="carousel-image">
+            <img :src="image" alt="Carousel Image" class="carousel-image" @click="openModalCarrusel(image)">
           </el-carousel-item>
         </el-carousel>
       </div>
+      <br>
+
       <div class="contacto " id="section-contacto">
         <div class="section-contacto">
           <div class="row">
@@ -415,6 +423,15 @@ const images = ref([
   'https://mybucketgatos.s3.us-east-2.amazonaws.com/ivonee/recreacion-3.png',
   'https://mybucketgatos.s3.us-east-2.amazonaws.com/ivonee/recreacion-4.png'
 ]);
+
+
+let dialogVisible = ref(false)
+let selectedImage = ref('')
+
+function openModalCarrusel(image) {
+  dialogVisible.value = true;
+  selectedImage.value = image;
+}
 
 const services = [
   "Evaluación de Riesgo Psicosocial",
@@ -746,6 +763,7 @@ onMounted(() => {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .contacto{
@@ -861,7 +879,7 @@ onMounted(() => {
     position: absolute;
     top: 0;
     right: 0;
-    width: 57%;
+    width: 54%;
   }
 
   .text-center h1{
@@ -1035,6 +1053,10 @@ onMounted(() => {
 
 .container-info {
   margin-top: 0rem;
+}
+
+.el-dialog {
+  width: 100%;
 }
 
 }

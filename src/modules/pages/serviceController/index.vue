@@ -54,17 +54,19 @@
                 iconName="fa-microphone-alt"
             />
         </div>
+        <el-dialog v-model="dialogVisible" title="" width="700" center>
+            <span>
+            <img :src="selectedImage" alt="Selected Image" class="large-image" style="border-radius: 20px;">
+            </span>
+        </el-dialog>
         <div class="container-slider">
             <el-carousel :interval="4000" type="card">
             <el-carousel-item v-for="(image, index) in images" :key="index">
-                <img :src="image" alt="Carousel Image" class="carousel-image" @click="showImage(image)">
+                <img :src="image" alt="Carousel Image" class="carousel-image" @click="openModalCarrusel(image)">
             </el-carousel-item>
             </el-carousel>
             
         </div>
-        <!-- <el-dialog v-if="dialogVisible" width="80%" :before-close="handleClose">
-        <img :src="selectedImage" alt="Large Image" class="large-image">
-        </el-dialog> -->
         <div class="contacto-paginas">
             <ContactoPaginas />
         </div>
@@ -73,7 +75,7 @@
     
     <script setup>
     import { ref } from 'vue';
-    import { ElCarousel, ElCarouselItem, ElDialog } from 'element-plus';
+    import { ElCarousel, ElCarouselItem } from 'element-plus';
     import HeaderPaginas from '../../../shared/components/HeaderPaginas.vue';
     import ContactoPaginas from '../../../shared/components/ContactoPaginas.vue';
     import ServiceSection from './components/service.vue';
@@ -85,19 +87,14 @@
         'https://mybucketgatos.s3.us-east-2.amazonaws.com/ivonee/certificado-6.jpg'
     ]);
 
-    const dialogVisible = ref(false);
-    const selectedImage = ref('');
-    const open = ref(true);
+    let dialogVisible = ref(false)
+    let selectedImage = ref('')
 
-    const showImage = (image) => {
-    selectedImage.value = image;
-    dialogVisible.value = true;
-    };
+    function openModalCarrusel(image) {
+        dialogVisible.value = true;
+        selectedImage.value = image;
+    }
 
-    const handleClose = (done) => {
-    dialogVisible.value = false;
-    done();
-    };
     </script>
     
     <style scoped>
@@ -133,6 +130,9 @@
         .contenedor {
             margin-right: 1rem;
             margin-left: 1rem;
+        }
+        .el-dialog {
+            width: 100%;
         }
     }
     </style>
