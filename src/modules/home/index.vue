@@ -1056,7 +1056,7 @@ onMounted(() => {
 }
 
 .el-dialog {
-  width: 100%;
+  width: 100% !important;
 }
 
 }
