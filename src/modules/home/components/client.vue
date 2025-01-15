@@ -50,7 +50,7 @@ section{
 
 @media (max-width: 800px){
     section{
-        width: 85vw;
+        width: 88vw;
     }
 }
 </style>

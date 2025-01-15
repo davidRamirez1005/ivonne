@@ -278,6 +278,13 @@
             compania="Directora de Recursos Humanos"
           />
         </div>
+        <div>
+          <client
+            comentario="Ivonne ,  muy profesional en todo lo que hace a nivel de orientación, capacitación, asesoramiento a las empresas en el tema de gestión humana y sistema de gestión de salud y seguridad en el trabajo. Durante muchos años contamos con sus valiosa colaboración, a nivel personal la admiro y valoro su bb ser integral."
+            nombre="luz Marina Gutiérrez Galvis"
+            compania="CHIC MARROQUINERIA SAS"
+          />
+        </div>
       </div>
       <br>
       <el-dialog v-model="dialogVisible" title="" width="700" center>
